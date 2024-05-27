@@ -2,6 +2,9 @@ import React from "react";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiArrowNarrowRight, HiOutlineMail } from "react-icons/hi";
+import { Link } from "react-scroll";
+import Resume from "../assets/resume/resume.pdf"
+
 
 function Home() {
   return (
@@ -49,7 +52,7 @@ function Home() {
             <li className="w-10 h-10 rounded-[50%] overflow-hidden flex justify-center items-center bg-[#565f69] transition-all hover:shadow-md hover:shadow-[#565f69]">
               <a
                 className="text-gray-300"
-                href="/"
+                href={Resume} download
               >
                 <BsFillPersonLinesFill size={25} />
               </a>
@@ -57,12 +60,14 @@ function Home() {
           </ul>
         </div>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 duration-300">
-            View Work{" "}
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
+          <Link to="work" smooth={true} duration={1000}>
+            <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600 duration-300">
+              View Work{" "}
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

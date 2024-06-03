@@ -1,4 +1,5 @@
 import React from "react";
+import 'animate.css';
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiArrowNarrowRight, HiOutlineMail } from "react-icons/hi";
@@ -11,11 +12,11 @@ function Home() {
       {/* Container */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
         <p className="text-pink-600">Hi, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
+        <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6] animate__animated animate__fadeInTopLeft">
           Boburbek Dadajonov
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-          I'm a Frontend Developer.
+          I'm a <span className="animate__animated animate__pulse inline-block animate__delay-1s">Frontend Developer.</span> 
         </h2>
         <p className="text-[#8892b0] py-4 max-w-[700px]">
           I'm a frontend developer specializing in building (and occasionally

@@ -1,4 +1,5 @@
 import React from "react";
+import 'animate.css';
 import BuildCon from "../assets/projects/buildcon.png";
 import HomeSmart from "../assets/projects/homeSmart.png";
 import ElectronicShop from "../assets/projects/electronicShop.png";
@@ -12,7 +13,7 @@ function Work() {
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">
-            Work
+          <span className="inline-block animate__animated animate__slideInDown">Work</span>
           </p>
           <p className="py-6">// Check out some of my recent work</p>
         </div>

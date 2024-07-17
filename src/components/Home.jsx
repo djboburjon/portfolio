@@ -4,7 +4,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiArrowNarrowRight, HiOutlineMail } from "react-icons/hi";
 import { Link } from "react-scroll";
-import Resume from "../assets/resume/resume.pdf";
+import Resume from "../assets/resume/Boburbek.pdf";
 
 function Home() {
   return (
